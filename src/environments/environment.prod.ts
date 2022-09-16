@@ -1,3 +1,8 @@
+
+
 export const environment = {
-  production: true
+    production: true,
+    baseUrl: "http://algun-url.com/api"
 };
+
+
