@@ -9,7 +9,6 @@ export interface Heroe {
 }
 
 export enum Publisher {
-    None = "",
     DCComics = "DC Comics",
     MarvelComics = "Marvel Comics",
 }

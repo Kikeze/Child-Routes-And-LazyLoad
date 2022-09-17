@@ -35,4 +35,16 @@ export class HeroesService {
         return this.http.get<Heroe[]>(`${this.apiUrl}/heroes`, { params });
     }
 
+    postHeroe(heroe: Heroe): Observable<Heroe> {
+        return this.http.post<Heroe>(`${this.apiUrl}/heroes`, heroe);
+    }
+
+    putHeroe(heroe: Heroe): Observable<Heroe> {
+        return this.http.put<Heroe>(`${this.apiUrl}/heroes/${heroe.id}`, heroe);
+    }
+
+    deleteHeroe(heroe: Heroe): Observable<Heroe> {
+        return this.http.delete<Heroe>(`${this.apiUrl}/heroes/${heroe.id}`);
+    }
+
 }
