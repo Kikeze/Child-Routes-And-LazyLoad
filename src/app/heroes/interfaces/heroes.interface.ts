@@ -1,3 +1,5 @@
+
+
 export interface Heroe {
     id?:              string;
     superhero:        string;
@@ -13,8 +15,3 @@ export enum Publisher {
     MarvelComics = "Marvel Comics",
 }
 
-export interface Usuario {
-    id:      number;
-    usuario: string;
-    email:   string;
-}
